@@ -14,6 +14,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
 import Popover from 'material-ui/Popover';
 
+import styles from './appBar.scss';
+
 export default class AppBar extends React.Component {
   constructor(props){
     super(props)
@@ -90,7 +92,7 @@ export default class AppBar extends React.Component {
                   onClick={this.handleTouchTap1}
                   onMouseEnter={this.handleTouchTap1}/>*/
     return (
-      <Toolbar>
+      <Toolbar className="appbar">
         <ToolbarGroup firstChild={true}>
         <FontIcon className="material-icons">menu</FontIcon>
         <ToolbarSeparator />
